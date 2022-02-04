@@ -18,7 +18,6 @@ if __name__ == "__main__":
         while(itemlength > 0):
             for i, v in enumerate(dataArr):
                 if isinstance(v, list): # i could add a generic iter here but not enough time
-                    result = []
                     reader(v, result)
                 elif isinstance(data[v], dict): # specifically check for object so we can add it to result
                     result[v] = data[v]
